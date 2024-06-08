@@ -1,0 +1,39 @@
+.overlay-container {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+}
+
+.modal {
+    height: 15rem;
+    width: 20rem;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+mat-select {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(7, 26, 39, 0.33);
+    /* margin: 10px 0px; */
+    height: fit-content;
+    align-self: center;
+}
+
+.mat-mdc-select-trigger {
+    height: 100%;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.mdc-list-item__primary-text {
+    font-size: 0.9em !important;
+}
+.mat-mdc-dialog-container .mdc-dialog__surface {
+    border-radius: 10px;
+    background-color: transparent;
+    
+}

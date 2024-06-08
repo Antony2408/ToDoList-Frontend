@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="border">
+        <div class="content">
+            <!-- Contenido que quieres mostrar -->
+            <h1 id="titulo">TO-DO LIST</h1>
+            <form>
+                <div class="button-field">
+                    <button id="signIn" #signIn type="button" [class.selected]="isSignInSelected">Iniciar Sesión</button>
+                    <button id="signUp" #signUp type="button" [class.selected]="!isSignInSelected" class="disable">Registrarse</button>
+                </div>
+                <div class="input-group">
+                    <label for="username" class="input-field" id="nameInput" #nameLabel>
+                        <input type="text" placeholder="usuario" id="username" #nameInput>
+                        <img src="assets/image/user-solid.svg" alt="user icon">
+                    </label>
+                    <label for="email" class="input-field">
+                        <input type="text" placeholder="e-mail" id="email" #emailInput required>
+                        <img src="assets/image/envelope-solid.svg" alt="email icon">
+                    </label>
+                    <label for="password" class="input-field">
+                        <input type="password" placeholder="contraseña" id="password" #passwordInput required>
+                        <img src="assets/image/lock-solid.svg" alt="password icon">
+                    </label>
+                </div>
+                <button type="submit" id="sendButton" #sendButton (click)="onSubmit($event)">Entrar</button>
+            </form>
+        </div>
+    </div>
+</div>

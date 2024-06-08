@@ -1,0 +1,17 @@
+<div class="item-container">
+    <ng-container *ngFor="let group of tasksByDate">
+        <div class="fecha">
+            <h1>{{ group.fechaFormato }}</h1>
+        </div>
+        <div class="lista-items">
+            <app-item-task *ngFor="let task of group.tasks" [id]="task.id" [titulo]="task.titulo" [descripcion]="task.descripcion"
+                [tiempo]="task.c_hora" [estado]="task.estado">
+            </app-item-task>
+        </div>
+    </ng-container>
+</div>
+
+
+<!-- <app-item-task (taskAdded)="onTaskAdded()" *ngFor="let task of group.tasks" [titulo]="task.titulo" [descripcion]="task.descripcion"
+                [tiempo]="task.c_hora" [estado]="task.estado">
+            </app-item-task> -->

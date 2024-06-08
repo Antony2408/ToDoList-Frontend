@@ -1,0 +1,26 @@
+.contenedor{
+    background-color: #344C64;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    row-gap: 1rem;
+    margin: 0px 10px;
+}
+
+input{
+    padding: 10px;
+    font-size: medium;
+    border-style: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    justify-self: end;
+}
+
+#titulo{
+    width: 50%;
+}

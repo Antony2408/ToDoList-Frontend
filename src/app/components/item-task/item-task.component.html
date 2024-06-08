@@ -1,0 +1,16 @@
+<div class="task-item">
+  <div class="flag" [ngClass]="estado"></div>
+  <div>
+    <div class="task-title">{{ titulo }}</div>
+    <div class="task-description">{{ descripcion }}</div>
+  </div>
+  <div class="task-time">{{ tiempo }}</div>
+  <!-- <div class="task-status">{{ estado }}</div> -->
+
+  <mat-select [(ngModel)]="estado">
+    <mat-option *ngFor="let estado of estados" [value]="estado.value" (click)="onStatusChange($event)">
+      {{ estado.viewValue }}
+    </mat-option>
+  </mat-select>
+  <mat-checkbox class="checkBox" (change)="checkboxChanged($event)"></mat-checkbox>
+</div>

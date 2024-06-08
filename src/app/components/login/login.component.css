@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{
+    font-family: "Nunito";
+}
+
+/* Contenedor del login */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.border{
+    display: flex;
+    background: linear-gradient(45deg, #099bf5 8%, #0e6988 50%);
+    /* background-image: conic-gradient(rgba(190,9,245,1), rgba(65,14,136,1)); */
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0 0px 10px #bb75ae1f;
+    z-index: 2;
+}
+
+.content {
+    background-color: #344C64;
+    border-radius: 10px;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+#titulo{
+    font-size: 1.8em;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.input-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /* margin-top: 20px; */
+    /* row-gap: 20px; */
+}
+
+input{
+    padding: 10px 6px;
+    font-size: medium;
+    border-style: none;
+    border-radius: 5px;
+    outline: none;
+    padding-right: 35px;
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 30px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+label{
+    position: relative;
+}
+
+img{
+    position: absolute;
+    top: 55%;
+    right: 10px;
+}
+
+.button-field{
+    border-radius: 5px;
+    background-color: #143a5b;
+}
+
+button{
+    width: 50%;
+    padding: 10px 0px;
+    border: none;
+    /* background-color: #480861; */
+    background-color: transparent;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    color: #ffffff;
+    transition: 0.25s ease-out;
+}
+
+button:hover, #sendButton:hover{
+    background-color: #1d4161;
+    color: rgb(0, 0, 0);
+}
+
+#sendButton{
+    width: 70%;
+    margin-top: 30px;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#signIn{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#signUp{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#sendButton{
+    border-radius: 5px;
+    background-color: #143a5b;
+}
+
+.button-field button.disable{
+    background-color: #4c6275;
+}
+
+/* Estilo adicional para la transición */
+#nameInput {
+    /* margin-top: 20px; */
+    overflow: hidden;
+    max-height: 0px;
+}

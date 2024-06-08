@@ -1,0 +1,12 @@
+<div>
+    <form class="contenedor" (ngSubmit)="addTask()">
+        <input type="text" id="titulo" placeholder="Nueva tarea" [(ngModel)]="task.titulo" name="title" required #tituloInput/>
+        <button mat-mini-fab color="primary" type="submit">
+            <mat-icon>add</mat-icon>
+        </button>
+        <input type="text" id="descripcion" placeholder="Descripción..." [(ngModel)]="task.descripcion" name="description" #descripcionInput/>
+        <button mat-mini-fab color="primary" type="button" (click)="deleteSelectedTasks()">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </form>
+</div>

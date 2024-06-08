@@ -1,0 +1,21 @@
+<div class="modal">
+    <h1>Titulo</h1>
+    <div class="task-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    <mat-select [(ngModel)]="estado">
+        <mat-option *ngFor="let estado of estados" [value]="estado.value">
+            {{ estado.viewValue }}
+        </mat-option>
+    </mat-select>
+    <div>
+        <p>Hora de creación: </p>
+        <p>10:00 am</p>
+        <p>Hora de modificación: </p>
+        <p>10:08 pm</p>
+    </div>
+</div>
+<!-- 
+<h2 mat-dialog-title>Dialog with elements</h2>
+<mat-dialog-content>This dialog showcases the title, close, content and actions elements.</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions> -->
